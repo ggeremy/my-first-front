@@ -1,0 +1,24 @@
+{
+  "name": "front-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "[svelte]": {
+          "editor.defaultFormatter": "svelte.svelte-vscode"
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "svelte.svelte-vscode",
+        "dbaeumer.vscode-eslint",
+        "csstools.postcss"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "vscode"
+}
